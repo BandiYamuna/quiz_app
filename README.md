@@ -142,3 +142,6 @@ Successfully created a local Git repository, committed project files, connected 
 
 
 
+<img width="1603" height="972" alt="Screenshot 2026-06-30 001329" src="https://github.com/user-attachments/assets/ecd4e022-1794-4701-a59d-b692dded3aef" />
+<img width="1913" height="1027" alt="Screenshot 2026-06-30 001353" src="https://github.com/user-attachments/assets/c31e9800-bb56-4cc9-a621-b33edf66ced0" />
+
