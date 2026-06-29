@@ -1,269 +1,144 @@
-Windows PowerShell 5.1
-Copyright (C) Microsoft Corporation. All rights reserved.
+# Git Practice - Ecommerce Project
 
-Install the latest PowerShell for new features and improvements! https://aka.ms/PSWindows
+## Overview
 
-PS C:\Users\19400> mkdir StudentManagement
+This repository was created to practice basic Git and GitHub commands, including repository initialization, file tracking, committing changes, viewing history, and pushing code to GitHub.
 
+## Git Commands Practiced
 
-    Directory: C:\Users\19400
+### 1. Create a Project
 
+```bash
+mkdir ecommerce
+cd ecommerce
+```
 
-Mode                 LastWriteTime         Length Name
-----                 -------------         ------ ----
-d-----        29-06-2026     22:40                StudentManagement
+### 2. Initialize Git Repository
 
+```bash
+git init
+```
 
-PS C:\Users\19400> cd StudentManagement
-PS C:\Users\19400\StudentManagement> git init
-Initialized empty Git repository in C:/Users/19400/StudentManagement/.git/
-PS C:\Users\19400\StudentManagement> cd /
-PS C:\> cd Users
-PS C:\Users> cd 19400
-PS C:\Users\19400> cd ecommerce
-PS C:\Users\19400\ecommerce> git status
-fatal: not a git repository (or any of the parent directories): .git
-PS C:\Users\19400\ecommerce> git init
-Initialized empty Git repository in C:/Users/19400/ecommerce/.git/
-PS C:\Users\19400\ecommerce> git status
-On branch master
+### 3. Check Repository Status
 
-No commits yet
+```bash
+git status
+```
 
-nothing to commit (create/copy files and use "git add" to track)
-PS C:\Users\19400\ecommerce> git status
-On branch master
+### 4. Add Files to Staging Area
 
-No commits yet
+Add a single file:
 
-Untracked files:
-  (use "git add <file>..." to include in what will be committed)
-        index.html
+```bash
+git add index.html
+```
 
-nothing added to commit but untracked files present (use "git add" to track)
-PS C:\Users\19400\ecommerce> git status
-On branch master
+Add all files:
 
-No commits yet
+```bash
+git add .
+```
 
-Untracked files:
-  (use "git add <file>..." to include in what will be committed)
-        about.html
-        footer.html
-        index.html
+### 5. Commit Changes
 
-nothing added to commit but untracked files present (use "git add" to track)
-PS C:\Users\19400\ecommerce> git status
-On branch master
+```bash
+git commit -m "footer about add"
+```
 
-No commits yet
+Second commit:
 
-Untracked files:
-  (use "git add <file>..." to include in what will be committed)
-        about.html
-        footer.html
-        index.html
+```bash
+git commit -m "add test file"
+```
 
-nothing added to commit but untracked files present (use "git add" to track)
-PS C:\Users\19400\ecommerce> git add index.html
-PS C:\Users\19400\ecommerce> git status
-On branch master
+### 6. View Commit History
 
-No commits yet
+```bash
+git log
+```
 
-Changes to be committed:
-  (use "git rm --cached <file>..." to unstage)
-        new file:   index.html
+### 7. View Commit Details
 
-Untracked files:
-  (use "git add <file>..." to include in what will be committed)
-        about.html
-        footer.html
+```bash
+git show <commit-id>
+```
 
-PS C:\Users\19400\ecommerce> git status
-On branch master
+### 8. Add Remote Repository
 
-No commits yet
+```bash
+git remote add origin https://github.com/BandiYamuna/quiz_app.git
+```
 
-Changes to be committed:
-  (use "git rm --cached <file>..." to unstage)
-        new file:   index.html
+### 9. Rename Branch
 
-Changes not staged for commit:
-  (use "git add <file>..." to update what will be committed)
-  (use "git restore <file>..." to discard changes in working directory)
-        modified:   index.html
+```bash
+git branch -M main
+```
 
-Untracked files:
-  (use "git add <file>..." to include in what will be committed)
-        about.html
-        footer.html
+### 10. Push Code to GitHub
 
-PS C:\Users\19400\ecommerce> git add .
-PS C:\Users\19400\ecommerce> git status
-On branch master
+First push:
 
-No commits yet
+```bash
+git push origin main
+```
 
-Changes to be committed:
-  (use "git rm --cached <file>..." to unstage)
-        new file:   about.html
-        new file:   footer.html
-        new file:   index.html
+Set upstream branch:
 
-PS C:\Users\19400\ecommerce> git commit -m "footer about add"
-[master (root-commit) 6dda493] footer about add
- 3 files changed, 9 insertions(+)
- create mode 100644 about.html
- create mode 100644 footer.html
- create mode 100644 index.html
-PS C:\Users\19400\ecommerce> git log
-commit 6dda49354efd3f7714631a37f56824d060b1f699 (HEAD -> master)
-Author: Yamuna <bandiyamuna15@gmail.com>
-Date:   Mon Jun 29 23:44:44 2026 +0530
+```bash
+git push -u origin main
+```
 
-    footer about add
-PS C:\Users\19400\ecommerce> git show 6dda49354efd3f7714631a37f56824d060b1f699
-commit 6dda49354efd3f7714631a37f56824d060b1f699 (HEAD -> master)
-Author: Yamuna <bandiyamuna15@gmail.com>
-Date:   Mon Jun 29 23:44:44 2026 +0530
+### 11. Verify Remote Repository
 
-    footer about add
+```bash
+git remote -v
+```
 
-diff --git a/about.html b/about.html
-new file mode 100644
-index 0000000..e69de29
-diff --git a/footer.html b/footer.html
-new file mode 100644
-index 0000000..e69de29
-diff --git a/index.html b/index.html
-new file mode 100644
-index 0000000..47b3831
---- /dev/null
-+++ b/index.html
-@@ -0,0 +1,9 @@
-+<!DOCTYPE html>
-+<html>
-+<body>
-+
-+<h1>My First Heading</h1>
-+<p>My first paragraph.</p>
-+<nav> this is nav</nav>
-+</body>
-+</html>
-\ No newline at end of file
-PS C:\Users\19400\ecommerce> git status
-On branch master
-nothing to commit, working tree clean
-PS C:\Users\19400\ecommerce>  git remote add origin https://github.com/BandiYamuna/quiz_app.git
-PS C:\Users\19400\ecommerce> git branch -M main
-PS C:\Users\19400\ecommerce> git branch
-* main
-PS C:\Users\19400\ecommerce> git push origin main
-Enumerating objects: 4, done.
-Counting objects: 100% (4/4), done.
-Delta compression using up to 4 threads
-Compressing objects: 100% (3/3), done.
-Writing objects: 100% (4/4), 361 bytes | 90.00 KiB/s, done.
-Total 4 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
-To https://github.com/BandiYamuna/quiz_app.git
- * [new branch]      main -> main
-PS C:\Users\19400\ecommerce> git add .
-PS C:\Users\19400\ecommerce> git commit -M "add test file"
+## Files Created
+
+* index.html
+* about.html
+* footer.html
+* test.txt
+
+## Git Concepts Learned
+
+* Creating a local Git repository
+* Tracking files using `git add`
+* Understanding untracked, staged, and committed files
+* Creating commits with meaningful messages
+* Viewing commit history using `git log`
+* Inspecting commit changes using `git show`
+* Connecting a local repository to GitHub
+* Renaming the default branch to `main`
+* Pushing code to a remote repository
+* Setting the upstream branch using `git push -u`
+* Checking remote repository details using `git remote -v`
+
+## Common Mistake Encountered
+
+Incorrect command:
+
+```bash
+git commit -M "add test file"
+```
+
+Error:
+
+```
 error: unknown switch `M'
-usage: git commit [-a | --interactive | --patch] [-s] [-v] [-u<mode>] [--amend]
-                  [--dry-run] [(-c | -C | --squash) <commit> | --fixup [(amend|reword):]<commit>]
-                  [-F <file> | -m <msg>] [--reset-author] [--allow-empty]
-                  [--allow-empty-message] [--no-verify] [-e] [--author=<author>]
-                  [--date=<date>] [--cleanup=<mode>] [--[no-]status]
-                  [-i | -o] [--pathspec-from-file=<file> [--pathspec-file-nul]]
-                  [(--trailer <token>[(=|:)<value>])...] [-S[<keyid>]]
-                  [--] [<pathspec>...]
+```
 
-    -q, --[no-]quiet      suppress summary after successful commit
-    -v, --[no-]verbose    show diff in commit message template
+Correct command:
 
-Commit message options
-    -F, --[no-]file <file>
-                          read message from file
-    --[no-]author <author>
-                          override author for commit
-    --[no-]date <date>    override date for commit
-    -m, --[no-]message <message>
-                          commit message
-    -c, --[no-]reedit-message <commit>
-                          reuse and edit message from specified commit
-    -C, --[no-]reuse-message <commit>
-                          reuse message from specified commit
-    --[no-]fixup [(amend|reword):]commit
-                          use autosquash formatted message to fixup or amend/reword specified commit
-    --[no-]squash <commit>
-                          use autosquash formatted message to squash specified commit
-    --[no-]reset-author   the commit is authored by me now (used with -C/-c/--amend)
-    --trailer <trailer>   add custom trailer(s)
-    -s, --[no-]signoff    add a Signed-off-by trailer
-    -t, --[no-]template <file>
-                          use specified template file
-    -e, --[no-]edit       force edit of commit
-    --[no-]cleanup <mode> how to strip spaces and #comments from message
-    --[no-]status         include status in commit message template
-    -S, --[no-]gpg-sign[=<key-id>]
-                          GPG sign commit
+```bash
+git commit -m "add test file"
+```
 
-Commit contents options
-    -a, --[no-]all        commit all changed files
-    -i, --[no-]include    add specified files to index for commit
-    --[no-]interactive    interactively add files
-    -p, --[no-]patch      interactively add changes
-    -o, --[no-]only       commit only specified files
-    -n, --no-verify       bypass pre-commit and commit-msg hooks
-    --verify              opposite of --no-verify
-    --[no-]dry-run        show what would be committed
-    --[no-]short          show status concisely
-    --[no-]branch         show branch information
-    --[no-]ahead-behind   compute full ahead/behind values
-    --[no-]porcelain      machine-readable output
-    --[no-]long           show status in long format (default)
-    -z, --[no-]null       terminate entries with NUL
-    --[no-]amend          amend previous commit
-    --no-post-rewrite     bypass post-rewrite hook
-    --post-rewrite        opposite of --no-post-rewrite
-    -u, --[no-]untracked-files[=<mode>]
-                          show untracked files, optional modes: all, normal, no. (Default: all)
-    --[no-]pathspec-from-file <file>
-                          read pathspec from file
-    --[no-]pathspec-file-nul
-                          with --pathspec-from-file, pathspec elements are separated with NUL character
+## Outcome
 
-PS C:\Users\19400\ecommerce> git commit -m "add test file"
-[main b216e8c] add test file
- 1 file changed, 0 insertions(+), 0 deletions(-)
- create mode 100644 test.txt
-PS C:\Users\19400\ecommerce> git push
-fatal: The current branch main has no upstream branch.
-To push the current branch and set the remote as upstream, use
-
-    git push --set-upstream origin main
-
-To have this happen automatically for branches without a tracking
-upstream, see 'push.autoSetupRemote' in 'git help config'.
-
-PS C:\Users\19400\ecommerce> git push -u origin main
-Enumerating objects: 3, done.
-Counting objects: 100% (3/3), done.
-Delta compression using up to 4 threads
-Compressing objects: 100% (2/2), done.
-Writing objects: 100% (2/2), 239 bytes | 239.00 KiB/s, done.
-Total 2 (delta 1), reused 0 (delta 0), pack-reused 0 (from 0)
-remote: Resolving deltas: 100% (1/1), completed with 1 local object.
-To https://github.com/BandiYamuna/quiz_app.git
-   6dda493..b216e8c  main -> main
-branch 'main' set up to track 'origin/main'.
-PS C:\Users\19400\ecommerce> git remote -v
-origin  https://github.com/BandiYamuna/quiz_app.git (fetch)
-origin  https://github.com/BandiYamuna/quiz_app.git (push)
-PS C:\Users\19400\ecommerce>
-
+Successfully created a local Git repository, committed project files, connected the repository to GitHub, and pushed the project to the remote repository while learning the complete basic Git workflow.
 
 
 
