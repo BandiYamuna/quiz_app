@@ -142,6 +142,12 @@ Successfully created a local Git repository, committed project files, connected 
 
 
 
-<img width="1603" height="972" alt="Screenshot 2026-06-30 001329" src="https://github.com/user-attachments/assets/ecd4e022-1794-4701-a59d-b692dded3aef" />
+<img width="1603" height="972" alt="Screenshot 2026-06-30 001329" src="https://github.com/user-attachments/assets/ecd4e022-1794-4701-a59d-b692dded3aef" /><img width="1913" height="1027" alt="Screenshot 2026-06-30 001353" src="https://github.com/user-attachments/assets/f948707b-5cc9-4803-8672-50a2f0965bfe" /><img <img width="1913" height="1027" alt="Screenshot 2026-06-30 001353" src="https://github.com/user-attachments/assets/e366bf02-1489-4c2d-a503-beadb130feab" /><img width="1852" height="982" alt="Screenshot 2026-06-30 001400" src="https://github.com/user-attachments/assets/6a26a10e-cf2e-40a5-82e6-94e054717679" />
+
+width="1650" height="995" alt="Screenshot 2026-06-30 001344" src="https://github.com/user-attachments/assets/3d5f3df9-1cdb-4c5a-b970-fb7472b99869" /><img width="1918" height="857" alt="Screenshot 2026-06-30 001409" src="https://github.com/user-attachments/assets/9479e14d-0173-4f42-a1ba-043853cd956b" /><img width="1350" height="1032" alt="image" src="https://github.com/user-attachments/assets/d46d097b-5598-4e62-9253-f455a8c93e2e" />
+
+
+
+
 <img width="1913" height="1027" alt="Screenshot 2026-06-30 001353" src="https://github.com/user-attachments/assets/c31e9800-bb56-4cc9-a621-b33edf66ced0" />
 
